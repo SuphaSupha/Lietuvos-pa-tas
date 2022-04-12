@@ -96,6 +96,7 @@ button:hover{
     width: 150px;
     margin: 0 auto;
     padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 .cards {
     display: flex;
@@ -118,3 +119,42 @@ button:hover{
 .card .card-text, .card a {
     padding: 16px;
 }
+@media screen and (max-width: 768px) {
+   .topbar {
+      justify-content: center;
+   }
+   .topbar, .contact-side nav a {
+       font-size: 15px;
+       
+   }
+   
+    .topbar .info-side {
+       display: none;
+   }
+   .middle-side {
+       flex-direction: column;
+   }
+   .middle-side button {
+       padding: 12px 18px;
+       font-size: 16px;
+   }
+   .belekas .middle-help {
+       margin-bottom: 16px;
+   }
+   .hero {
+       height: 30vh;
+   }
+   .cards {
+       flex-direction: column;
+      
+   }
+   .card {
+       width: 100%;
+       margin: 8px 0px ;
+       
+   }
+   .news h2 {
+       padding-bottom: 16px;
+   }
+}
+    
